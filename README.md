@@ -1,48 +1,67 @@
 # Value-Directed Systems
 
-**Exploring software that knows what is valuable and records it explicitly.**
+> **Software that knows what matters — and helps you act on it intentionally.**
+
+Traditional software tracks data, performs tasks, or enforces rules. Value-Directed Systems do something different: they understand **what changes are valuable**, preserve **auditable context**, and guide actions to align with overarching system goals — without ever acting on your behalf.  
+
+Think of it as a guardian for meaningful decisions: observing, advising, and recording, so every action has a traceable reason, every outcome is explicit, and every system component stays aligned with what truly matters.
 
 ---
 
 ## What Is a Value-Directed System?
 
-A Value-Directed System is a software system or collection of systems that:
+A Value-Directed System is **a framework for integrating software components around a shared understanding of value**. Unlike traditional systems, which focus on automation or correctness, these systems:
 
-- Understands what changes or actions are meaningful.
-- Preserves explicit, auditable records of those changes.
-- Guides decisions based on context and value without imposing authority.
-- Ensures each component’s actions align with the overarching system goals.
+- Record human or system decisions explicitly.
+- Separate **evaluation** (what we think) from **commitment** (what we actually do).
+- Provide **auditability** and traceable history for every decision.
+- Operate in a **context-aware, advisory mode**, preserving alignment across individual applications and interconnected systems.
+- Respect human or system authority, constraints, and scope without overriding intent.
 
-Unlike traditional systems, it does **not** infer value automatically or act on behalf of humans — it observes, records, and advises.
+Charter Core is the foundational engine powering this paradigm. It is minimal, deterministic, and auditable, providing the building blocks for:
 
----
-
-## Example Usage: Coordinating Multi-Service Actions
-
-Imagine a distributed software platform with three services:
-
-1. **Data Ingestion**
-2. **Analytics**
-3. **Reporting**
-
-Each service produces outputs independently. A Value-Directed System sits above them to:
-
-- Record which outputs are meaningful and why.
-- Advise on which data streams or actions should drive downstream workflows.
-- Ensure no service acts outside the declared goals or value priorities.
-- Provide an auditable trail of decisions and rationale for future review.
-
-By consulting this system, operators or automated orchestrators can confidently act, knowing that every change reflects intentional, valuable choices — not accidental or implicit defaults.
+- Sessions: explicit, bounded decision-making contexts.
+- Candidates: proposals or ideas under evaluation.
+- Acceptance: deliberate, traceable commitment.
+- Authority & Scope: explicit rules for legitimacy.
+- Audit & History: immutable records of all actions and outcomes.
 
 ---
 
-## Key Principles
+## Usage Example: Individual Systems & Software Integration
 
-- **Advisory Only:** The system informs but never imposes legitimacy.
-- **Contextual Awareness:** Value is evaluated relative to system state and goals.
-- **Auditable:** Every recommendation, annotation, and decision rationale is preserved.
-- **Explicit Ownership:** Actions become “owned” only when explicitly accepted by the human or governing authority.
+Imagine multiple software services in an enterprise — a CRM, billing system, and inventory management tool. Each has its own data, processes, and rules.  
+
+Using a Value-Directed approach:
+
+1. Changes or proposals in any system are **evaluated** first.
+2. Value and impact are **explicitly assessed** and recorded.
+3. Once all dependencies and constraints are clear, actions are **committed** via a session, producing auditable legitimacy.
+4. Systems remain **aligned** with organizational goals, and every decision is traceable and explainable.
+
+Even if humans or machines participate across different layers, the system **never assumes intent** — it only observes, advises, and records. This preserves clarity, reduces ambiguity, and ensures every outcome is defensible.
 
 ---
 
-> This repository explores the emerging paradigm of Value-Directed Systems, using Charter as a reference example. It is a conceptual foundation for building software that is aware of what matters.
+## Why It Matters
+
+Most software assumes correctness or authority implicitly. Value-Directed Systems explicitly record **why a decision is valuable**, not just what the outcome is.  
+
+This enables:
+
+- **Trustworthy integration:** Systems and applications coordinate without hidden assumptions.  
+- **Auditable decision-making:** Every commitment is traceable and explainable.  
+- **Alignment to overarching goals:** Individual components act in concert without central enforcement.  
+- **Human-centric control:** People remain responsible, while the system provides clarity and context.
+
+---
+
+## Next Steps
+
+This repository focuses on **Charter Core**, the foundational engine. Future sections will expand:
+
+- Guidance layers for advisory AI support.
+- Usage patterns for individual applications and multi-system orchestration.
+- Best practices for adoption in software integration scenarios.
+
+For now, start exploring **sessions, candidates, authority, scope, and acceptance** using the provided minimal API and engine foundations.

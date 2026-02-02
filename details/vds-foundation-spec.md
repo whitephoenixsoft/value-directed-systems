@@ -21,9 +21,13 @@ A Value-Directed System is an advisory system that:
 - Reports divergence with care and context
 - Supports deliberate, staged human intervention
 - Preserves ownership, history, and dignity
+- Has value declared and interpreted by humans
+- Does not calculate or infer value autonomously
+- All observations, divergences, and interventions are auditable for later review
 
-A VDS does **not** optimize blindly.
+A VDS does **not** optimize blindly. 
 It helps humans notice, decide, and care.
+It may suggest adjustments, but decisions remain human-owned.
 
 ---
 
@@ -143,9 +147,12 @@ A VDS may operate across multiple systems or services.
 
 Federation rules:
 - Decisions originate locally
+- Decisions on one area may depend or affect another areas decisions
 - Propagation is explicit
 - Context is preserved
 - Local observation precedes remote enforcement
+- Federation does not imply shared purpose — only shared visibility of intent
+- Federated propagation does not create legitimacy
 
 A federated system synchronizes **intent**, not behavior.
 

@@ -1,7 +1,7 @@
-Example: Value-Directed Cloud Pricing Management
-Observation, Intent, and Care Over Optimization
+# Example: Value-Directed Cloud Pricing Management
+*Observation, Intent, and Care Over Optimization*
 
-Purpose of This Example
+## Purpose of This Example
 This document demonstrates how a value-directed system behaves
 when applied to a real, failure-prone domain: cloud pricing.
 
@@ -12,7 +12,7 @@ despite variability, seasonality, and operational noise.
 This example is illustrative.
 It does not prescribe tooling, automation levels, or architecture.
 
-Problem Statement
+## Problem Statement
 Cloud pricing decisions fail because:
 
 - cost is contextual, not absolute
@@ -30,7 +30,7 @@ Most systems respond by:
 A value-directed approach treats pricing as a long-lived decision space,
 not a continuous optimization problem.
 
-Declared Intent (Human-Owned)
+## Declared Intent (Human-Owned)
 A value-directed system begins with explicit intent.
 
 Example intents may include:
@@ -45,7 +45,7 @@ They are commitments that define what “acceptable” means.
 
 They are recorded, annotated, and owned by humans.
 
-Observation Over Reaction
+## Observation Over Reaction
 The system continuously observes cost metrics relative to declared intent.
 
 Observations include:
@@ -65,7 +65,7 @@ Most deviations result in:
 Silence is intentional.
 Stability is not assumed to be correctness.
 
-Seasonal Variability as First-Class Context
+## Seasonal Variability as First-Class Context
 Seasonality is explicitly modeled, not worked around.
 
 Examples:
@@ -84,7 +84,7 @@ Seasonal periods may be declared as:
 These declarations prevent panic reactions
 and preserve institutional memory across years.
 
-Gradual Adjustment and Experiments
+## Gradual Adjustment and Experiments
 When cost behavior consistently violates declared intent
 outside acceptable contexts, the system may propose experiments.
 
@@ -106,7 +106,7 @@ They are treated as clinical trials, not rollouts.
 
 Each experiment produces observations, not conclusions.
 
-Irreversibility Awareness
+## Irreversibility Awareness
 Some cost-related changes carry irreversible consequences.
 
 Examples:
@@ -126,7 +126,7 @@ Instead, it:
 - surfaces unresolved tradeoffs
 - escalates decisions back to humans with context intact
 
-Memory Across Time
+## Memory Across Time
 A value-directed system remembers.
 
 It records:
@@ -145,7 +145,7 @@ Here is why.”
 This memory reduces fear-driven overcorrection
 and prevents relearning the same lessons every year.
 
-What This Example Is Not
+## What This Example Is Not
 This system is not:
 
 - a cost optimizer
@@ -164,7 +164,7 @@ Its role is to preserve intent,
 surface drift,
 and support careful, accountable decision-making.
 
-Why This Matters
+## Why This Matters
 Cloud pricing failures are rarely technical.
 They are failures of memory, ownership, and value clarity.
 

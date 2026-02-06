@@ -1,9 +1,9 @@
 # Value-Directed Systems vs Traditional Observability
 
-Traditional observability systems help operators understand **what is happening** in a system.
+Traditional observability systems help operators understand **what is happening** in a system.  
 Value-Directed Systems help humans understand **whether what is happening still serves what they care about**.
 
-They may look similar at first glance.
+They may look similar at first glance.  
 They are not.
 
 This document clarifies the distinction to prevent misuse, misexpectation, and category collapse.
@@ -26,7 +26,7 @@ They answer questions like:
 - Is the system healthy relative to operational norms?
 - How fast can we restore service?
 
-Observability systems are **operationally centered**.
+Observability systems are **operationally centered**.  
 Their success is measured by uptime, latency, error rates, and recovery speed.
 
 ---
@@ -68,8 +68,8 @@ The difference is not **what** is observed, but **how it is interpreted**.
 | “Error rate exceeded threshold” | “Error rate now conflicts with an accepted commitment” |
 | “CPU utilization is abnormal” | “This behavior may affect our ability to meet the stated intent” |
 
-Observability reports facts.
-VDS reports **facts in context of decisions**.
+Observability reports facts.  
+VDS reports **facts in the context of decisions**.
 
 ---
 
@@ -117,8 +117,8 @@ A VDS:
 - Does not tune
 - Does not self-improve
 
-It cares.
-It watches.
+It cares.  
+It watches.  
 It remembers.
 
 Care means:
@@ -130,7 +130,7 @@ Care means:
 
 ## Dashboards vs Decision Lineage
 
-Dashboards show *current state*.
+Dashboards show *current state*.  
 They are optimized for the present.
 
 Value-Directed Systems preserve:
@@ -161,12 +161,51 @@ In Value-Directed Systems:
 - Never enforces behavior
 - Never assumes shared purpose
 
-Federation in a VDS is graph-based and non-coercive.
+Federation in a VDS is graph-based and non-coercive.  
 It exists to preserve legitimacy, not control.
 
 ---
 
-## A Useful Analogy (With Limits)
+## A Useful Analogy for Engineers (With Limits)
+
+Traditional observability is often compared to dashboards and instrumentation.  
+A useful additional analogy for Value-Directed Systems is **unit testing**, with important constraints.
+
+Unit tests answer:
+> “Is the system behaving according to what we said it should do?”
+
+Value-Directed Systems ask:
+> “Is the system behaving according to what we committed to caring about?”
+
+The parallels are intentional:
+
+- Unit tests encode explicit expectations  
+- VDS encodes explicit decisions and values  
+- Unit tests do not fix code  
+- VDS does not change systems  
+- Failing tests prompt human attention  
+- Misalignment signals invite human deliberation  
+
+In both cases:
+- Expectations must be written down
+- Results are interpretable only in context
+- Humans remain responsible for action
+
+### Where the Analogy Stops
+
+The analogy must not be taken too far.
+
+- Unit tests are pass/fail; VDS signals are interpretive
+- Unit tests assume a single correctness model; VDS allows plural, contextual value
+- A green test does not mean a system is good
+- Silence in a VDS does not mean success — only alignment with declared intent
+
+Value-Directed Systems are **not correctness frameworks**.  
+They are legitimacy and meaning frameworks.
+
+---
+
+## A Clinical Analogy Still Applies
 
 Observability is like medical instrumentation:
 - Heart rate
@@ -179,7 +218,7 @@ A Value-Directed System is like clinical care:
 - Escalating thoughtfully
 - Avoiding unnecessary intervention
 
-The instruments may be the same.
+The instruments may be the same.  
 The responsibility is not.
 
 ---

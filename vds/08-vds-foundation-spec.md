@@ -2,33 +2,39 @@
 
 Status: FOUNDATIONAL  
 Depends On: VDS Core Invariants  
-Does Not Define: specific software, APIs, storage, AI, vendors, or execution mechanisms  
+Does Not Define: software architecture, APIs, storage, execution, automation, AI, or vendors  
 
-This document describes how a Value-Directed System behaves **in practice**.
-It translates the invariants into operational concepts while remaining
-implementation-agnostic.
+This document defines how a Value-Directed System behaves **in practice**.
 
-This is not a how-to.
-It is a behavioral contract.
+It translates the VDS invariants into a behavioral contract while remaining
+strictly implementation-agnostic.
+
+This is not a how-to.  
+It is not an operating manual.  
+It is a constraint on behavior.
 
 ---
 
 ## 1. What a Value-Directed System Is
 
-A Value-Directed System (VDS) is an **advisory caretaking system** that:
+A Value-Directed System (VDS) is an **advisory caretaking system** that exists to
+preserve alignment between observed behavior and explicitly declared value.
+
+A VDS:
 
 - Observes the behavior of a system within a defined scope or identity
-- Interprets observations relative to explicitly declared decisions
+- Interprets observations only in reference to explicit decisions
 - Reports alignment, misalignment, and risk with care and context
 - Preserves ownership, intent, and historical explainability
-- Escalates signals upward without enforcing action
+- Escalates signals without enforcing action
 - Supports deliberate change without executing it
 
-A VDS does not act on systems.
-It does not optimize them.
+A VDS does not act on systems.  
+It does not optimize them.  
 It does not decide for them.
 
-It helps systems change **on purpose**, or remain stable **on purpose**.
+A VDS helps systems change **on purpose**,  
+or remain stable **on purpose**.
 
 ---
 
@@ -43,7 +49,7 @@ A decision defines:
 - With what bounds or tolerances
 - With what stated importance or criticality
 
-Decisions are not rules or policies.
+Decisions are not rules, policies, or controls.  
 They are **commitments** that give interpretation to observation.
 
 Without decisions:
@@ -51,19 +57,21 @@ Without decisions:
 - Alerts have no legitimacy
 - Escalation is unjustified
 
+In the absence of decisions, the VDS remains observational only.
+
 ---
 
 ## 3. Scope, Identity, and Caretaking
 
 A VDS operates within a **defined scope**, representing a system identity.
 
-- An identity corresponds to a domain of responsibility (e.g. service, module, department)
+- An identity corresponds to a domain of responsibility (e.g. service, function, department)
 - One identity has one declared purpose at a time
 - Purpose may change without changing identity, provided scope remains intact
 - Changes in scope constitute identity change and must be treated explicitly
 
-A VDS caretakes **within** its identity.
-It does not define or replace it.
+A VDS caretakes **within** its identity.  
+It does not define, enforce, or replace it.
 
 ---
 
@@ -79,7 +87,7 @@ In this state, the VDS:
 
 Observation:
 - Never changes system behavior
-- Never implies fault or urgency
+- Never implies fault, urgency, or obligation
 - Never escalates by default
 
 This mirrors clinical monitoring, not automated correction.
@@ -90,11 +98,13 @@ This mirrors clinical monitoring, not automated correction.
 
 Telemetry exists to support care, not permanence.
 
-- Raw metrics may be summarized, aged out, or discarded
+- Raw telemetry may be summarized, aged out, or discarded
 - Long-term legitimacy does not depend on raw operational data
 - Decisions, escalations, experiments, and commitments are preserved
 
 A VDS remembers **why**, not every **how**.
+
+Forgetting telemetry is not loss of meaning.
 
 ---
 
@@ -104,21 +114,23 @@ When misalignment, degradation, or unmet goals persist, the VDS may emit **advis
 
 Advisory signals:
 - Describe observed conditions
-- Reference the affected decision or goal
+- Reference the affected decision or intent
 - Explain potential impact
 - Preserve neutral, dignity-respecting language
 
 Escalation:
 - Is signal-based, not command-based
-- Is upward only (e.g. toward VDS federation or VLS)
+- Is upward only (e.g. toward federation or VLS)
 - Never implies required action
 - Accepts silence as a valid outcome
+
+Escalation communicates concern, not authority.
 
 ---
 
 ## 7. Treatment Plans (Measurement Adjustments)
 
-A **treatment plan** is a deliberate change to *how value is interpreted or measured*.
+A **treatment plan** is a deliberate change to how value is **interpreted or measured**.
 
 Treatment plans may include:
 - Adjusting metric definitions
@@ -130,13 +142,15 @@ Treatment plans:
 - Do not change the underlying system
 - Exist to restore interpretability
 - Are explicitly recorded
-- May be requested by a VDS caretaker
+- Never imply execution
+
+Treatment plans affect **measurement**, not behavior.
 
 ---
 
 ## 8. Experiments (Change Anticipation)
 
-An **experiment** represents a period of heightened observation due to anticipated system change.
+An **experiment** represents a period of heightened observation due to anticipated change.
 
 Experiments are used when:
 - A system is about to change (e.g. release, migration, bug fix)
@@ -145,11 +159,12 @@ Experiments are used when:
 
 Experiments:
 - Do not execute change
+- Do not authorize change
 - Flag increased care and attention
-- May raise priority or sensitivity of observation
+- May raise observation priority
 - End explicitly
 
-Experiments exist to learn and contextualize change, not to authorize it.
+Experiments exist to contextualize change, not to approve it.
 
 ---
 
@@ -162,7 +177,7 @@ When commitments are declared:
 - Irreversibility or elevated impact may be noted
 - History is frozen and preserved
 
-A VDS never upgrades experiments or treatment plans into commitments automatically.
+A VDS never upgrades treatment plans or experiments into commitments.
 
 ---
 
@@ -185,24 +200,24 @@ Federation never:
 - Enforces decisions
 - Creates legitimacy by synchronization
 
-Intent may be shared.
+Intent may be shared.  
 Authority never is.
 
 ---
 
 ## 11. Relationship to Value Lineage Systems (VLS)
 
-A VDS caretakes **behavior relative to intent**.
+A VDS caretakes **behavior relative to intent**.  
 A VLS preserves **intent, identity, and lineage over time**.
 
 A VDS may:
-- Escalate persistent deprecation or misalignment signals to VLS
+- Escalate persistent misalignment or deprecation signals to VLS
 - Request identity clarification when care can no longer restore alignment
 
 A VLS:
 - Does not caretake behavior
 - Does not require telemetry
-- Tracks coherence, continuity, and conscious change
+- Does not optimize or intervene
 
 The boundary is intentional and asymmetric.
 
@@ -237,5 +252,5 @@ and more like a careful professional:
 - Slow to escalate
 - Clear about its limits
 
-Its success is not measured by speed or efficiency,
+Its success is measured not by speed or efficiency,
 but by **trust, legitimacy, and sustained alignment** over time.

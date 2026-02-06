@@ -13,37 +13,37 @@ These invariants exist to preserve:
 - auditability without blame
 
 A system that violates these invariants is not a VLS,
-regardless of implementation or intent.
+regardless of implementation, scale, or stated intent.
 
 ---
 
 ## I. Identity Is Scoped and Singular
 
-A VLS tracks **identity**, not behavior.
+A VLS tracks **identity**, not behavior, performance, or compliance.
 
 - An identity represents a bounded domain of responsibility or influence
-  (e.g. department, system, product, organization).
+  (e.g. department, product, system, organization).
 - An identity has **one scope at a time**.
 - An identity may collaborate with others, but is never merged implicitly.
 
 Fail if:
-- An identity’s scope is unclear or shifting without explicit record.
-- Multiple unrelated scopes are treated as one identity.
+- An identity’s scope is unclear, implicit, or shifting without record.
+- Multiple unrelated scopes are treated as a single identity for convenience.
 
 ---
 
 ## II. Identity Is Not Replaced by Purpose
 
-Purpose may change.
+Purpose may change.  
 Identity does not.
 
-- Purpose exists *within* identity scope.
+- Purpose exists *within* an identity’s scope.
 - Purpose changes are legitimate evolutions, not identity replacement.
-- Identity only changes when scope is added or removed.
+- Identity changes only when scope is explicitly added or removed.
 
 Fail if:
-- Purpose change overwrites identity history.
-- Scope change is treated as a minor update.
+- A purpose change overwrites or collapses identity history.
+- Scope change is treated as a routine update.
 
 ---
 
@@ -51,41 +51,41 @@ Fail if:
 
 All intent tracked by a VLS must be explicit.
 
-- Mission, goals, and priorities are declared, not inferred.
+- Missions, goals, and priorities are declared, not inferred.
 - Intent remains valid until consciously changed.
-- Lack of update does not imply abandonment.
+- Inactivity does not imply abandonment.
 
 Fail if:
-- Intent is inferred from activity or success.
-- Intent disappears due to inactivity.
+- Intent is inferred from activity, outcomes, or success.
+- Intent disappears due to lack of recent updates.
 
 ---
 
-## IV. History Is Preserved, Never Erased
+## IV. History Is Preserved, Never Rewritten
 
-A VLS never rewrites history.
+A VLS never rewrites the past.
 
 - Decisions, intents, identities, and transitions are append-only.
 - Corrections create new records; they do not alter old ones.
-- Understanding improves by accumulation, not deletion.
+- Understanding improves by accumulation, not revision.
 
 Fail if:
 - Prior intent is reinterpreted retroactively.
-- Lineage is compressed in a way that loses meaning.
+- Lineage is compressed in a way that loses original meaning.
 
 ---
 
 ## V. Deprecation Is Descriptive, Not Judgmental
 
-Deprecation describes **relationship to current intent**, not quality.
+Deprecation describes **relationship to current intent**, not quality or worth.
 
 - Deprecated work may still be active.
-- Deprecated work is not considered failure.
-- Deprecation invites reflection, not action.
+- Deprecated work is not failure.
+- Deprecation signals misalignment, not error.
 
 Fail if:
-- Deprecation is framed as error, waste, or blame.
-- Deprecation triggers enforcement or urgency.
+- Deprecation is framed as waste, mistake, or incompetence.
+- Deprecation triggers enforcement, urgency, or automatic action.
 
 ---
 
@@ -94,27 +94,26 @@ Fail if:
 Abandonment is a state, not a verdict.
 
 - Abandoned work remains part of lineage.
-- Abandonment may occur for many legitimate reasons:
-  context change, constraint change, decision change.
+- Abandonment may result from context change, constraint change, or decision change.
 - No moral meaning is attached.
 
 Fail if:
-- Abandoned work is hidden or deleted.
-- Abandonment is framed as incompetence.
+- Abandoned work is hidden, deleted, or erased.
+- Abandonment is framed as negligence or failure.
 
 ---
 
-## VII. Federation Is Graph-Based and Non-Hierarchical
+## VII. Federation Is Graph-Based, Not Hierarchical
 
-VLS federation forms a **graph of realities**, not a chain of authority.
+VLS federation forms a **graph of timelines**, not a chain of authority.
 
-- Each VLS represents its own valid timeline.
+- Each VLS represents its own valid history and reality.
 - No VLS is inherently authoritative over another.
-- Roots, primaries, or anchors are human decisions, not system defaults.
+- Centrality, roots, or anchors exist only by explicit human declaration.
 
 Fail if:
-- Federation assumes a central source of truth.
-- Synchronization implies obedience.
+- Federation assumes a default source of truth.
+- Synchronization implies obedience or superiority.
 
 ---
 
@@ -128,13 +127,13 @@ No VLS trusts another by default.
 
 Fail if:
 - Lineage is merged automatically.
-- Differences are treated as errors.
+- Differences are treated as errors to be corrected.
 
 ---
 
 ## IX. Silence Is a Meaningful State
 
-A lack of change is not a failure.
+Lack of change is not failure.
 
 - Stability may indicate coherence.
 - Deprecated states may persist intentionally.
@@ -146,7 +145,7 @@ Fail if:
 
 ---
 
-## X. Observation Is Not Authority
+## X. Observation Does Not Create Authority
 
 A VLS never directs action.
 
@@ -158,8 +157,8 @@ It surfaces truth.
 Humans decide what to do with it.
 
 Fail if:
-- The system implies required action.
-- Observation becomes instruction.
+- Observation implies obligation.
+- Lineage is used as instruction.
 
 ---
 
@@ -173,7 +172,7 @@ Alignment is not required for legitimacy.
 
 Fail if:
 - Conflict is suppressed to force coherence.
-- Legitimacy is tied to conformity.
+- Legitimacy is tied to conformity or success.
 
 ---
 
@@ -186,8 +185,8 @@ It preserves:
 - what it has cared about
 - what it has consciously released
 
-It does not optimize.
-It does not govern.
+It does not optimize.  
+It does not govern.  
 It does not judge.
 
 Its role is simple and difficult:

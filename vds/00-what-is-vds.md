@@ -66,3 +66,5 @@ A Value-Directed System helps systems change **only when they mean to** — and 
 
 It does not control systems — it ensures they can preserve and act on their intended value **with care, clarity, and dignity**.
 
+---
+Note: This is a conceptual archetype — not a product or tool to be deployed as-is.

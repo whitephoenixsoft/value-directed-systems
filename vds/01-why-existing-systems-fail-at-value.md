@@ -15,7 +15,7 @@ Over time:
 
 - Metrics diverge from the value they were intended to represent  
 - Optimization focuses on what is measurable rather than meaningful  
-- Local improvements can create global harm  
+- Local improvements can create global harm;  doing well while indirectly harming other parts or systems
 - Context evolves while metrics remain fixed  
 
 Without explicit value declarations, systems cannot distinguish healthy adaptation from silent degradation.
@@ -58,4 +58,4 @@ Misalignment accumulates silently—not because anyone chose it, but because the
 
 Systems fail at value not because they are poorly engineered, but because they **lack structures for ownership, memory, and intent**.
 
-Value-Directed Systems address this gap—not by enforcing behavior, but by **making value, drift, and ownership explicit, visible, and auditable over time**.
+Value-Directed Systems address this gap—not by enforcing behavior, but by **making value, drift, and ownership explicit, visible, and auditable over time**. It provides a preventative framework, to transition naturally from problem to solution.

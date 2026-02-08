@@ -7,28 +7,31 @@ Scope: Any system claiming to preserve value, identity, or mission lineage over 
 This document defines the **non-negotiable invariants** of a Value Lineage System (VLS).
 
 These invariants exist to preserve:
-- legitimacy across change
-- continuity of identity
-- compassion in deprecation
-- auditability without blame
 
-A system that violates these invariants is not a VLS,
+- legitimacy across change  
+- continuity of identity  
+- compassion in deprecation and abandonment  
+- auditability without blame or coercion  
+
+A system that violates these invariants is not a VLS,  
 regardless of implementation, scale, or stated intent.
 
 ---
 
-## I. Identity Is Scoped and Singular
+## I. Identity Is Scoped, Singular, and Non-Derived
 
-A VLS tracks **identity**, not behavior, performance, or compliance.
+A VLS tracks **identity**, not behavior, performance, compliance, or outcomes.
 
 - An identity represents a bounded domain of responsibility or influence
   (e.g. department, product, system, organization).
 - An identity has **one scope at a time**.
+- Identity is not inferred from activity, structure, or success.
 - An identity may collaborate with others, but is never merged implicitly.
 
 Fail if:
-- An identity’s scope is unclear, implicit, or shifting without record.
-- Multiple unrelated scopes are treated as a single identity for convenience.
+- An identity’s scope is implicit, shifting, or reconstructed after the fact.
+- Multiple unrelated scopes are collapsed into a single identity for convenience.
+- Identity is derived from metrics, performance, or authority.
 
 ---
 
@@ -38,54 +41,58 @@ Purpose may change.
 Identity does not.
 
 - Purpose exists *within* an identity’s scope.
-- Purpose changes are legitimate evolutions, not identity replacement.
+- Purpose changes are legitimate evolutions, not replacements.
 - Identity changes only when scope is explicitly added or removed.
 
 Fail if:
 - A purpose change overwrites or collapses identity history.
-- Scope change is treated as a routine update.
+- Scope change is treated as a routine update or optimization.
+- Continuity is asserted where it no longer exists.
 
 ---
 
-## III. Intent Is Explicit and Durable
+## III. Intent Is Explicit, Declared, and Durable
 
-All intent tracked by a VLS must be explicit.
+All intent preserved by a VLS must be explicit.
 
 - Missions, goals, and priorities are declared, not inferred.
-- Intent remains valid until consciously changed.
-- Inactivity does not imply abandonment.
+- Intent remains valid until consciously changed or deprecated.
+- Inactivity does not imply abandonment, error, or irrelevance.
 
 Fail if:
 - Intent is inferred from activity, outcomes, or success.
 - Intent disappears due to lack of recent updates.
+- Silence is interpreted as disengagement.
 
 ---
 
-## IV. History Is Preserved, Never Rewritten
+## IV. History Is Additive and Never Rewritten
 
 A VLS never rewrites the past.
 
-- Decisions, intents, identities, and transitions are append-only.
-- Corrections create new records; they do not alter old ones.
+- Identities, intents, decisions, transitions, and deprecations are append-only.
+- Corrections create new records; they do not alter prior meaning.
 - Understanding improves by accumulation, not revision.
 
 Fail if:
 - Prior intent is reinterpreted retroactively.
-- Lineage is compressed in a way that loses original meaning.
+- Lineage is compressed in a way that loses original context.
+- History is edited to appear coherent after the fact.
 
 ---
 
-## V. Deprecation Is Descriptive, Not Judgmental
+## V. Deprecation Is Descriptive, Not Evaluative
 
-Deprecation describes **relationship to current intent**, not quality or worth.
+Deprecation describes **relationship to current intent**, not worth, quality, or competence.
 
-- Deprecated work may still be active.
+- Deprecated work may remain active.
 - Deprecated work is not failure.
-- Deprecation signals misalignment, not error.
+- Deprecation indicates misalignment, not error.
 
 Fail if:
 - Deprecation is framed as waste, mistake, or incompetence.
-- Deprecation triggers enforcement, urgency, or automatic action.
+- Deprecation triggers urgency, enforcement, or corrective pressure.
+- Deprecated states are treated as liabilities by default.
 
 ---
 
@@ -95,29 +102,31 @@ Abandonment is a state, not a verdict.
 
 - Abandoned work remains part of lineage.
 - Abandonment may result from context change, constraint change, or decision change.
-- No moral meaning is attached.
+- No moral or performance meaning is attached.
 
 Fail if:
 - Abandoned work is hidden, deleted, or erased.
-- Abandonment is framed as negligence or failure.
+- Abandonment is framed as negligence, failure, or embarrassment.
+- History is cleaned to avoid discomfort.
 
 ---
 
-## VII. Federation Is Graph-Based, Not Hierarchical
+## VII. Federation Is Graph-Based and Non-Hierarchical
 
 VLS federation forms a **graph of timelines**, not a chain of authority.
 
 - Each VLS represents its own valid history and reality.
 - No VLS is inherently authoritative over another.
-- Centrality, roots, or anchors exist only by explicit human declaration.
+- Centrality, primacy, or anchoring exists only by explicit human declaration.
 
 Fail if:
 - Federation assumes a default source of truth.
-- Synchronization implies obedience or superiority.
+- Synchronization implies obedience, correctness, or superiority.
+- Authority emerges accidentally through aggregation.
 
 ---
 
-## VIII. Federation Requires Baseline Review
+## VIII. Federation Requires Explicit Baseline Review
 
 No VLS trusts another by default.
 
@@ -128,20 +137,22 @@ No VLS trusts another by default.
 Fail if:
 - Lineage is merged automatically.
 - Differences are treated as errors to be corrected.
+- Synchronization erases local meaning.
 
 ---
 
-## IX. Silence Is a Meaningful State
+## IX. Silence Is a First-Class and Legitimate State
 
 Lack of change is not failure.
 
 - Stability may indicate coherence.
-- Deprecated states may persist intentionally.
-- Absence of updates does not imply neglect.
+- Deprecated or abandoned states may persist intentionally.
+- Absence of updates does not imply neglect or misalignment.
 
 Fail if:
 - The system pressures change due to inactivity.
-- Silence is interpreted as misalignment by default.
+- Silence is interpreted as decay or failure by default.
+- Movement is required to justify legitimacy.
 
 ---
 
@@ -151,14 +162,15 @@ A VLS never directs action.
 
 - It does not recommend fixes.
 - It does not escalate urgency.
-- It does not enforce alignment.
+- It does not enforce alignment or behavior.
 
-It surfaces truth.
+A VLS surfaces truth.  
 Humans decide what to do with it.
 
 Fail if:
 - Observation implies obligation.
-- Lineage is used as instruction.
+- Lineage is treated as instruction.
+- History is used to compel action.
 
 ---
 
@@ -172,7 +184,8 @@ Alignment is not required for legitimacy.
 
 Fail if:
 - Conflict is suppressed to force coherence.
-- Legitimacy is tied to conformity or success.
+- Legitimacy is tied to conformity, success, or outcomes.
+- Dissent is treated as defect.
 
 ---
 

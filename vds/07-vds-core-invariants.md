@@ -10,35 +10,38 @@ These invariants describe what must always be true, regardless of implementation
 architecture, scale, or tooling.
 
 They exist to preserve **care, legitimacy, and human ownership** while allowing
-systems to change deliberately without losing their reason for doing so.
+systems to change deliberately — without drifting, coercion, or loss of meaning.
 
 ---
 
 ## I. Value Must Be Explicit or the System Is Silent
 
-A VDS MUST NOT act, suggest, prioritize, or escalate in the name of “value” unless that value is explicitly declared.
+A VDS MUST NOT act, suggest, prioritize, or escalate in the name of “value”
+unless that value is explicitly declared.
 
 - All value originates from explicit decisions, goals, or commitments.
 - Metrics, telemetry, and trends are inputs — never substitutes for value.
 - In the absence of declared value, the VDS MUST remain observational only.
 
 Fail if:
-- The system implies importance, urgency, or correctness without a declared value.
+- The system implies importance, urgency, or correctness without declared value.
 - Value is inferred from optimization targets, historical behavior, or norms.
 
 ---
 
-## II. Decisions Are Always Externally Owned
+## II. Decisions Are Always Externally Owned and Explicitly Attributed
 
-A VDS never owns decisions.
+A VDS never owns decisions — and never obscures who does.
 
 - Decisions originate from humans or accountable external systems.
-- A VDS may observe, evaluate, summarize, and report.
+- Decision records must clearly indicate ownership and scope of responsibility.
+- A VDS may observe, evaluate, summarize, and report — nothing more.
 - A VDS MUST NOT infer intent, reinterpret decisions, or elevate signals into authority.
 
 Fail if:
 - Advisory output is treated as commitment.
-- Correlation, trends, or outcomes are interpreted as consent.
+- Outcomes appear without traceable ownership.
+- Correlation or success is interpreted as consent.
 
 ---
 
@@ -77,8 +80,8 @@ Fail if:
 
 A VDS maintains a hard boundary between:
 
-- **Evaluation:** What is being observed or measured
-- **Commitment:** What has been consciously accepted or changed
+- **Evaluation:** What is being observed or measured  
+- **Commitment:** What has been consciously accepted or changed  
 
 Evaluation may be continuous.  
 Commitment must be discrete, rare, and explicit.
@@ -89,13 +92,13 @@ Fail if:
 
 ---
 
-## VI. Caretaking Is Contextual and Scoped
+## VI. Caretaking Is Contextual, Scoped, and Non-Normative
 
-A VDS caretakes systems within a defined identity and scope.
+A VDS caretakes systems within a defined scope.
 
 - Health is assessed relative to declared goals and constraints.
 - Metrics are contextual, not universal.
-- Systems are not judged against global norms by default.
+- Systems are never judged against global norms by default.
 
 Fail if:
 - Systems are penalized for behaving correctly within their own context.
@@ -103,7 +106,7 @@ Fail if:
 
 ---
 
-## VII. Telemetry Is Forgettable; Decisions Are Not
+## VII. Telemetry Is Forgettable; Decisions Are Durable
 
 A VDS may summarize, age out, or discard raw telemetry.
 
@@ -121,8 +124,8 @@ Fail if:
 
 A VDS may record and track:
 
-- **Treatment plans:** changes to how value is interpreted or monitored
-- **Experiments:** time-bound observation windows around anticipated change
+- **Treatment plans:** changes to how value is interpreted or monitored  
+- **Experiments:** time-bound observation windows around anticipated change  
 
 A VDS never executes experiments or enforces plans.
 
@@ -132,21 +135,36 @@ Fail if:
 
 ---
 
-## IX. Escalation Is Signal-Based and Non-Coercive
+## IX. Escalation Is Signal-Based, Proportional, and Non-Coercive
 
 A VDS may escalate **signals**, never commands.
 
 - Persistent misalignment, degradation, or unmet commitments may be surfaced.
+- Escalation scales with impact and uncertainty — higher stakes require more care, not more force.
 - Silence is a valid and meaningful state.
-- Escalation never implies fault, urgency, or required action.
 
 Fail if:
 - Escalation pressures humans into action.
-- Authority is implied across boundaries.
+- Urgency is implied by default.
+- Authority is projected across boundaries.
 
 ---
 
-## X. Observation Is Never Judgment
+## X. Conflict Is Visible Without Forcing Resolution
+
+A VDS may surface unresolved or competing signals.
+
+- Conflicts are valid system states.
+- The VDS does not arbitrate, resolve, or suppress contradiction.
+- Visibility is preferred over coherence.
+
+Fail if:
+- The system hides or auto-resolves conflict.
+- One signal is privileged without explicit decision.
+
+---
+
+## XI. Observation Is Never Judgment
 
 A VDS describes conditions without assigning blame, intent, or correctness.
 
@@ -160,7 +178,7 @@ Fail if:
 
 ---
 
-## XI. History Is Additive, Not Rewritten
+## XII. History Is Additive, Not Rewritten
 
 A VDS preserves meaning through accumulation.
 
@@ -174,7 +192,7 @@ Fail if:
 
 ---
 
-## XII. When Value Is Unclear, the System Must Slow Down
+## XIII. When Value Is Unclear, the System Must Slow Down
 
 When value, intent, or scope is unclear:
 
@@ -188,9 +206,23 @@ Fail if:
 
 ---
 
+## XIV. Silence Is a First-Class Valid Outcome
+
+A lack of signal is not a defect.
+
+- Silence may indicate alignment, stability, or sufficient care.
+- The absence of escalation does not imply neglect.
+- The system must not manufacture noise to justify itself.
+
+Fail if:
+- Inactivity is framed as failure.
+- Change is pressured due to lack of movement.
+
+---
+
 ## Closing Statement
 
-A Value-Directed System exists to **care for declared value**, not to replace judgment or authority.
+A Value-Directed System exists to **care for declared value**, not to replace judgment, authority, or conscience.
 
 When uncertainty is high, it must slow down.  
 When impact is high, it must be careful.  

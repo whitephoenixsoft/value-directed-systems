@@ -73,6 +73,27 @@ VDS reports **facts in the context of decisions**.
 
 ---
 
+## VDS as a Conceptual Layer Over Observability
+
+Value-Directed Systems are **not sidecars or replacement monitoring tools**.  
+They are a **conceptual layer** that interprets existing telemetry through the lens of declared value and alignment.
+
+Key distinctions:
+
+- **Conceptual, not operational:** VDS does not optimize, remediate, or enforce behavior.  
+- **Complementary:** It works on top of existing logging, metrics, or monitoring systems like Splunk, Prometheus, or Datadog.  
+- **Human-centered:** It surfaces signals in a way humans can interpret relative to explicit decisions and goals.  
+- **Care-focused:** VDS emphasizes clarity, auditability, and restraint over speed or automation.  
+
+**Analogy:**  
+- Metrics = raw vitals  
+- Observability tools = stethoscope  
+- VDS = clinical interpretation by a physician: using the vitals *to decide if the patient is aligned with expected health goals*.  
+
+VDS **enhances observability**, giving context and meaning rather than adding more raw data or automation.
+
+---
+
 ## Alerts vs Alignment Signals
 
 Traditional observability produces:

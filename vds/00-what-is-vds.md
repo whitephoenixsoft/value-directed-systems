@@ -1,6 +1,14 @@
-# What Is a Value-Directed System
+# Value-Directed System (VDS) — Concept and Foundation
 
-A **Value-Directed System (VDS)** is a **caregiving, advisory system** that helps humans and systems **observe and remain aligned with explicitly declared decisions and intent over time**.
+**Status:** FOUNDATIONAL  
+**Depends On:** Decision Ledger, Commit Canon  
+**Does Not Define:** legitimacy creation, acceptance, authority, execution, optimization, UI, or server topology
+
+---
+
+## Part 1 — Conceptual Overview
+
+A **Value-Directed System (VDS)** is a **caregiving, advisory system** that helps humans and systems **observe, understand, and remain aligned with explicitly declared decisions and intent over time**.
 
 Unlike traditional software—which prioritizes correctness, automation, optimization, or execution—a VDS prioritizes **care, clarity, and legitimacy**.
 
@@ -12,7 +20,7 @@ Instead, a VDS makes **value, intent, and ownership visible and auditable across
 
 ---
 
-## Definition
+### Definition
 
 A Value-Directed System:
 
@@ -30,7 +38,7 @@ It surfaces conditions so accountable humans can decide **if**, **when**, and **
 
 ---
 
-## Non-Intervention & Caregiving Principles
+### Non-Intervention & Caregiving Principles
 
 A Value-Directed System **never**:
 
@@ -53,7 +61,7 @@ All change occurs **only through explicit human commitment**, using authority an
 
 ---
 
-## A Distinct Architectural Layer
+### A Distinct Architectural Layer
 
 A VDS is best understood as a distinct **layer in system architecture**, not a feature of execution:
 
@@ -68,7 +76,7 @@ Metrics, telemetry, and signals have meaning **only** because explicit decisions
 
 ---
 
-## Structural Compassion
+### Structural Compassion
 
 Structural compassion means:
 
@@ -83,7 +91,7 @@ Care is what the system enforces **by design**.
 
 ---
 
-## In One Sentence
+### In One Sentence
 
 A Value-Directed System helps systems change **only when they mean to** —  
 and helps them remember **why** —  
@@ -91,4 +99,113 @@ by preserving alignment, ownership, and truth **with care, clarity, and dignity*
 
 ---
 
-*Note: This describes a conceptual archetype and behavioral contract, not a product or deployment model.*
+## Part 2 — Foundation Specification (Commit-Centric Behavior)
+
+### Purpose
+
+This section defines the **behavioral contract** of a VDS operating without Charter.
+
+A VDS is a **caregiving system** that observes behavior relative to **explicit decisions** and produces **check-ins** that preserve truth, dignity, and agency over time.
+
+---
+
+### Decisions as Interpretive Anchors
+
+All VDS meaning derives from **explicit decisions** recorded elsewhere (e.g., in a **Decision Ledger**).
+
+A decision provides:
+
+- Scope  
+- Intent  
+- Bounds or tolerances  
+- Assumptions  
+- Declared importance  
+
+Without decisions:
+
+- Metrics are uninterpreted  
+- Check-ins may exist but remain non-evaluative  
+
+---
+
+### Check-Ins (Caregiving Signals)
+
+A **check-in** is a recorded caregiving observation.
+
+Check-ins may indicate:
+
+- Alignment  
+- Drift  
+- Capacity reduction  
+- Stability  
+- Intent unchanged  
+- Reassessment requested  
+- Paused intentionally  
+
+Check-ins are:
+
+- Descriptive, not prescriptive  
+- Non-urgent by default  
+- Non-authoritative  
+- Append-only commits  
+
+---
+
+### Silence as a Valid State
+
+If decisions exist and no material change is observed, the VDS emits no check-ins.
+
+Silence indicates stability and adequate care.
+
+---
+
+### Escalation and Federation
+
+Escalation means visibility, not pressure.
+
+A VDS may:
+
+- Propagate check-ins  
+- Request clarification  
+
+A VDS may **never**:
+
+- Enforce coordination  
+- Transfer authority  
+
+---
+
+### Interaction with VLS
+
+- VDS observes behavior  
+- VLS preserves intent, identity, and lineage  
+
+A VDS may escalate persistent misalignment or capacity concerns to VLS.
+
+---
+
+### Telemetry, Treatment Plans, and Experiments
+
+- **Telemetry** exists to support care and observation  
+- **Treatment plans** are recorded adjustments to how value is measured, not executed  
+- **Experiments** contextualize anticipated changes; they do not authorize execution  
+
+All remain descriptive, audit-preserving, and append-only.
+
+---
+
+### Closing Principle
+
+A Value-Directed System behaves like a careful professional:
+
+- Observant  
+- Context-aware  
+- Explicit  
+- Slow to escalate  
+- Clear about its limits  
+
+Success is measured not by speed or efficiency, but by **trust, legitimacy, and sustained alignment over time**.
+
+---
+
+*Note: This document describes a conceptual archetype and behavioral contract, not a deployable product.*

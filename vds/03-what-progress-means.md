@@ -262,6 +262,8 @@ It cares about **defensibility of decisions**, not task execution.
 
 ## Why This Comes Before Check-Ins
 
+A check-in is when progress is reported.
+
 Without this shared perceptual model:
 
 - Check-ins feel evaluative  

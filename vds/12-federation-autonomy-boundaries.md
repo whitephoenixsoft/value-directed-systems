@@ -1,211 +1,289 @@
-# Federation, Autonomy, and Boundaries
+# VDS Federation — Care, Autonomy, and Boundary Integrity
 
-> **A foundation for sharing intent and alignment across autonomous systems  
-without control, coercion, or collapse of identity.**
+> **A structure for sharing alignment signals across autonomous systems  
+without authority transfer, identity mutation, or coercion.**
 
-This document defines how Value-Directed Systems (VDS) and Value Lineage Systems (VLS) federate.
-It formalizes **what federation means**, **what it does not mean**, and **how boundaries preserve legitimacy** across systems, organizations, and time.
+This document defines federation **at the Value-Directed System (VDS) layer only**.
 
-Federation here is not an implementation detail.
-It is a structural commitment to autonomy, care, and clarity.
+It formalizes what VDS federation is, what it is not, and how caregiving signals
+propagate across independent identities while preserving autonomy.
+
+VLS (Value Lineage System) governs identity, version, and structural evolution.
+VDS federation never mutates identity or version.
+
+Federation is not an implementation detail.
+It is a structural commitment to care without control.
 
 ---
 
-## 1. Purpose of Federation
+## 1. Purpose of VDS Federation
 
-Federation exists to enable **shared understanding without shared control**.
+VDS federation exists to enable:
 
-Its purpose is to allow independent systems or identities to:
-- Share declared intent
-- Surface alignment or misalignment
-- Preserve history and context
-- Coordinate meaning without enforcing behavior
+- Shared visibility of alignment signals
+- Cross-boundary understanding of drift
+- Coordinated awareness without coordinated enforcement
+- Care at scale without structural collapse
 
-Federation is **advisory**, **non-interventionist**, and **explicitly bounded**.
+It does not exist to:
 
-A federated system does not ask:
-> “What should others do?”
+- Enforce behavior
+- Synchronize operational state
+- Coordinate deployments
+- Mutate identity or scope
+- Create authority hierarchies
+
+A federated VDS does not ask:
+
+> “What should they do?”
 
 It asks:
-> “What do others say they intend, and how does that relate to us?”
+
+> “What are they observing relative to their declared decisions,  
+> and how does that relate to our declared decisions?”
 
 ---
 
-## 2. Federation Is a Graph, Not a Hierarchy
+## 2. Federation Propagates Signals, Not State
 
-Federation is **graph-based**, not hierarchical.
+VDS federation shares:
 
-- There is no inherent root
-- There is no natural upstream or downstream
-- Any notion of centrality is a **human decision**, not a system property
+- Check-ins
+- Supportability degradation signals
+- Declared experiment context (metadata only)
+- Escalation summaries
+- Silence (explicitly recorded stability)
 
-Each node in the federation:
-- Maintains its own reality
-- Preserves its own authority
-- Shares information voluntarily
+It does not share:
 
-**Analogy**
-Federation behaves like distributed version control:
-- Histories can be shared
-- Context can be compared
-- Divergence is allowed
-- Convergence is intentional
+- Raw telemetry
+- Execution instructions
+- Deployment commands
+- Structural mutations
+- Identity version changes
 
-Federation synchronizes **meaning**, not state.
+Federation synchronizes **interpretation artifacts**, not runtime behavior.
 
 ---
 
-## 3. Autonomy and Boundary Integrity
+## 3. Autonomy Is Preserved at Every Boundary
 
-Every federated participant is autonomous.
+Every federated VDS:
 
-This means:
-- Each system or identity owns its decisions
-- Each boundary defines scope and responsibility
-- No external system can compel change
+- Owns its observation scope
+- Interprets relative to its own declared decisions
+- Maintains local authority over escalation thresholds
+- Preserves local cadence and posture
 
 Federation must never:
-- Override local authority
-- Implicitly enforce alignment
-- Collapse multiple identities into one
-- Treat visibility as obligation
+
+- Override local decisions
+- Imply obligation
+- Collapse distinct identities
+- Treat visibility as consent
 
 **Invariant**
-> Visibility does not imply consent.  
+
+> Visibility does not imply obligation.  
 > Awareness does not imply authority.
 
-Boundaries are not obstacles.
-They are the mechanism by which legitimacy is preserved.
+---
+
+## 4. Federation Is Graph-Based, Not Hierarchical
+
+VDS federation forms a graph of caregiving systems.
+
+- There is no inherent root.
+- There is no automatic upstream authority.
+- Centrality exists only by explicit human declaration.
+
+Each node:
+
+- Maintains its own caregiving posture
+- Aggregates external signals voluntarily
+- Decides independently how to interpret shared check-ins
+
+Federation distributes awareness, not power.
 
 ---
 
-## 4. Layered Federation: VDS and VLS
+## 5. Escalation Across Federation
 
-Federation operates differently at different layers.
+Escalation in federation increases visibility — never pressure.
 
-### VDS Federation (Care and Alignment)
+Examples of federated signals:
 
-VDS federation concerns **behavior relative to declared value**.
+- Persistent misalignment relative to declared value
+- Supportability degradation across multiple areas
+- Prolonged instability beyond declared deployment window
+- Repeated requests for clarification
 
-It may:
-- Share alignment or misalignment signals
-- Escalate persistent deprecation
-- Request decision updates
-- Request treatment plans (structured experimentation or adjustment)
+Escalation does not:
 
-It does not:
-- Share raw telemetry
-- Summarize identity
-- Enforce resolution
+- Mandate intervention
+- Transfer decision rights
+- Trigger automated coordination
+- Modify identity or version
 
-VDS federation answers:
-> “This system is no longer serving its declared value.”
-
-Silence is acceptable.
-Persistent misalignment is not hidden.
+Escalation prevents silent drift.
+It does not force convergence.
 
 ---
 
-### VLS Federation (Identity and Continuity)
+## 6. Supportability Degradation in Federation
 
-VLS federation concerns **identity, scope, and mission coherence**.
+Supportability degradation may propagate across federation.
 
-It may:
-- Share identity-level intent
-- Track scope gain or loss
-- Represent deprecated or abandoned identities
-- Preserve lineage across divergence
+Example:
 
-It uses:
-- Baseline review semantics
-- No assumed trust
-- Explicit synchronization
+> “Identity A reports sustained inability to demonstrate cost predictability.”
 
-VLS federation answers:
-> “This identity no longer coheres with the declared mission.”
+Other identities may:
 
-VLS does not care about health or metrics.
-It cares about **who the system is becoming**.
+- Reflect on dependency relationships
+- Assess their own declared commitments
+- Issue local requests for clarification
 
----
+They may not:
 
-## 5. Areas, Scope, and Identity
+- Diagnose the remote system
+- Enforce corrective measures
+- Assume structural failure
 
-Decision ledgers use areas differently at each layer.
-
-- **Decision Ledger (foundational)**  
-  One area per unrelated decision set.
-
-- **VDS Caretaker**  
-  At least one area per monitored value or concern.
-
-- **VDS Federation**  
-  Areas per aligned concern, plus a mandatory mission or intent area.
-
-- **VLS Federation**  
-  One area per identity, plus a mission intent area for cohesion.
-
-**Invariant**
-> One identity corresponds to one domain of authority.
-
-Identity without scope is undefined.
-Scope change is an identity-level event.
+Supportability degradation is informational, not accusatory.
 
 ---
 
-## 6. Escalation Without Control
+## 7. Deployment Windows and Instability Context
 
-Federation escalates **clarity**, not urgency.
+When a federated participant declares a deployment window:
 
-- Silence is a valid state
-- Observation does not demand action
-- Escalation is descriptive, not prescriptive
+- That context may propagate as metadata.
+- Escalation cadence may adjust locally.
+- Aggregation may replace repetitive signaling.
 
-Examples of escalation:
-- Long-running deprecated work
-- Persistent misalignment with declared value
-- Identity pressure caused by scope change
+Deployment context does not:
 
-No escalation implies:
-- Mandate
-- Blame
-- Required intervention
+- Suspend observation
+- Suppress misalignment
+- Alter identity or scope
+- Change version numbers
 
-Escalation exists to prevent silent drift, not to force resolution.
+Instability in one node does not structurally cascade across federation.
+
+Each identity interprets instability relative to its own declared intent.
 
 ---
 
-## 7. What Federation Never Does
+## 8. Silence as a Federated Signal
 
-Federation never:
+Silence propagates as stability.
+
+A federated VDS may explicitly share:
+
+> “No material change relative to declared decisions.”
+
+Silence is:
+
+- Legitimate
+- Informational
+- Non-suspicious by default
+
+Federation must not manufacture urgency due to inactivity.
+
+---
+
+## 9. Identity and Version Integrity
+
+VDS federation does not mutate structural definitions.
+
+Specifically, federation must not:
+
+- Change identity
+- Modify scope
+- Increment version numbers
+- Trigger sunset
+- Create structural deprecation
+
+Identity evolution is governed outside the VDS layer (see VLS documentation).
+
+VDS federation propagates care signals only.
+
+Structural evolution requires explicit declaration.
+
+---
+
+## 10. Conflict Visibility Without Arbitration
+
+Federated systems may expose conflicting signals.
+
+Example:
+
+- Identity A reports stability.
+- Identity B reports dependency risk from A.
+
+Federation:
+
+- Makes divergence visible.
+- Preserves authorship.
+- Does not arbitrate truth.
+
+Conflict remains a valid system state.
+
+Resolution requires explicit human decision.
+
+---
+
+## 11. Aggregation Without Authority Emergence
+
+Large federations may aggregate signals.
+
+Aggregation may:
+
+- Summarize repeated misalignment
+- Consolidate instability windows
+- Represent cross-identity degradation patterns
+
+Aggregation must not:
+
+- Create implied command structures
+- Establish implicit hierarchy
+- Convert frequency into authority
+
+Frequency increases visibility — not legitimacy.
+
+---
+
+## 12. What VDS Federation Never Does
+
+VDS federation never:
+
 - Pushes changes
 - Applies decisions
-- Aggregates telemetry into authority
-- Resolves conflicts automatically
-- Assumes shared purpose
-- Rewrites intent
+- Coordinates deployments
+- Executes remediation
+- Mutates identity or version
+- Enforces alignment
+- Suppresses disagreement
 
-Federation preserves disagreement.
-Legitimacy requires consent.
+It preserves autonomy while amplifying clarity.
 
 ---
 
-## 8. A New Federation Archetype
+## Closing Perspective
 
-This is not:
-- Service federation
-- Control-plane federation
-- Policy enforcement
-- Organizational hierarchy
+VDS federation is **care distributed across boundaries**.
 
-This is **meaning federation**.
+It allows systems to:
 
-It exists so systems can:
-- Share intent without surrendering autonomy
-- Disagree without fragmentation
-- Change without erasing history
-- Coordinate without coercion
+- Share alignment signals
+- Surface cross-identity impact
+- Reflect on interdependence
+- Maintain dignity and ownership
 
-Federation does not make systems behave the same.
-It helps them understand **why they are different**—
-and whether that difference is still intended.
+It does not make systems behave the same.
+
+It makes differences visible without turning them into violations.
+
+Federation does not create control.  
+It creates shared awareness under structural restraint.

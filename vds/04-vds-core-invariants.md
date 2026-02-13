@@ -6,18 +6,15 @@ Scope: Any system that claims to operate as a Value-Directed System
 
 This document defines the **non-negotiable invariants** of a Value-Directed System (VDS).
 
-These invariants describe what must always be true, regardless of implementation,
-architecture, scale, or tooling.
+These invariants describe what must always be true, regardless of implementation, architecture, scale, or tooling.
 
-They exist to preserve **care, legitimacy, and human ownership** while allowing
-systems to change deliberately — without drifting, coercion, or loss of meaning.
+They exist to preserve **care, legitimacy, and human ownership** while allowing systems to change deliberately — without drifting, coercion, or loss of meaning.
 
 ---
 
 ## I. Value Must Be Explicit or the System Is Silent
 
-A VDS MUST NOT act, suggest, prioritize, or escalate in the name of “value”
-unless that value is explicitly declared.
+A VDS MUST NOT act, suggest, prioritize, or escalate in the name of “value” unless that value is explicitly declared.
 
 - All value originates from explicit decisions, goals, or commitments.
 - Metrics, telemetry, and trends are inputs — never substitutes for value.
@@ -50,7 +47,7 @@ Fail if:
 A VDS operates strictly as an advisory and caregiving layer.
 
 - Observation precedes guidance.
-- Guidance precedes experimentation or treatment planning.
+- Guidance precedes experimentation or measurement adjustments.
 - Experiments precede commitment.
 - Commitment is explicit, auditable, and external to the VDS.
 
@@ -120,14 +117,14 @@ Fail if:
 
 ---
 
-## VIII. Experiments and Treatment Plans Are Descriptive, Not Executable
+## VIII. Experiments and Measurement Adjustments Are Descriptive, Not Executable
 
 A VDS may record and track:
 
-- **Treatment plans:** changes to how value is interpreted or monitored  
+- **Measurement adjustments:** refinements to interpretation of signals  
 - **Experiments:** time-bound observation windows around anticipated change  
 
-A VDS never executes experiments or enforces plans.
+A VDS never executes experiments or enforces measurement adjustments.
 
 Fail if:
 - Experiments resemble deployments.
@@ -142,6 +139,7 @@ A VDS may escalate **signals**, never commands.
 - Persistent misalignment, degradation, or unmet commitments may be surfaced.
 - Escalation scales with impact and uncertainty — higher stakes require more care, not more force.
 - Silence is a valid and meaningful state.
+- Deployment windows and instability posture may adjust the cadence of escalations but do not confer authority.
 
 Fail if:
 - Escalation pressures humans into action.
@@ -150,17 +148,19 @@ Fail if:
 
 ---
 
-## X. Conflict Is Visible Without Forcing Resolution
+## X. Conflict and Supportability Degradation Are Visible Without Forcing Resolution
 
-A VDS may surface unresolved or competing signals.
+A VDS may surface unresolved or competing signals and **supportability degradation**.
 
 - Conflicts are valid system states.
-- The VDS does not arbitrate, resolve, or suppress contradiction.
+- Degradation indicates reduced ability to support declared intent, not failure.
 - Visibility is preferred over coherence.
+- The VDS does not diagnose cause, enforce action, or resolve conflict.
 
 Fail if:
 - The system hides or auto-resolves conflict.
 - One signal is privileged without explicit decision.
+- Degradation triggers automated corrective measures.
 
 ---
 
@@ -192,7 +192,21 @@ Fail if:
 
 ---
 
-## XIII. When Value Is Unclear, the System Must Slow Down
+## XIII. Identity, Scope, and Version Cannot Be Mutated
+
+A VDS may observe identity, scope, and version, but **cannot change them**.
+
+- Identity evolution, version increments, or scope shifts are controlled by VLS or human authority.
+- Escalation or observation does not confer the right to alter structure.
+- Deployment, instability, or panic conditions do not change identity or version.
+
+Fail if:
+- The system automatically modifies identity, scope, or version.
+- Escalation is treated as permission to change structural definitions.
+
+---
+
+## XIV. When Value, Scope, or Intent Is Unclear, the System Must Slow Down
 
 When value, intent, or scope is unclear:
 
@@ -206,7 +220,7 @@ Fail if:
 
 ---
 
-## XIV. Silence Is a First-Class Valid Outcome
+## XV. Silence Is a First-Class Valid Outcome
 
 A lack of signal is not a defect.
 
@@ -224,9 +238,10 @@ Fail if:
 
 A Value-Directed System exists to **care for declared value**, not to replace judgment, authority, or conscience.
 
-When uncertainty is high, it must slow down.  
-When impact is high, it must be careful.  
-When value is unclear, it must remain silent.
+It observes, escalates, and reflects.  
+It slows down under uncertainty.  
+It remains restrained under impact.  
+It never alters identity, scope, or version.  
 
 Clarity is success.  
 Restraint is correctness.  

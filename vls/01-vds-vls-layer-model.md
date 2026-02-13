@@ -1,6 +1,7 @@
 # VDS / VLS Layer Model
 
-This document defines the foundational layers used in Value-Directed Systems (VDS) and Value Lineage Systems (VLS).  
+This document defines the foundational layers used in Value-Directed Systems (VDS), Value Lineage Systems (VLS), and the Commit-Legitimacy layer (Charter).
+
 Its purpose is to prevent category errors, authority creep, and conceptual collapse by making boundaries explicit.
 
 These layers are complementary but **not interchangeable**.
@@ -9,118 +10,184 @@ These layers are complementary but **not interchangeable**.
 
 ## Overview of Layers
 
-There are three primary layers:
+There are three primary structural layers:
 
-1. Decision Ledger Layer  
+1. Commit-Legitimacy Layer (Charter / Decision Ledger)  
 2. Value-Directed System (VDS) Layer  
 3. Value Lineage System (VLS) Layer  
+
+Deployment windows and instability posture are **cross-layer contextual protocols**, not independent layers.
 
 Each layer has a distinct role, responsibility, and limitation.
 
 ---
 
-## 1. Decision Ledger Layer
+## 1. Commit-Legitimacy Layer (Charter)
 
 **Purpose:**  
-To record explicit decisions, commitments, and legitimacy.
+To record explicit commitments and establish legitimacy.
 
-**What it observes:**  
-- Human or system decisions
-- Proposals, acceptances, rejections
-- Authority, scope, and context
+This layer is commit-centric and append-only.
 
-**What it records:**  
-- Immutable decision records
+**What it observes:**
+- Proposals
+- Acceptances and rejections
+- Authority declarations
+- Scope declarations
+- Context and session boundaries
+
+**What it records:**
+- Immutable commits
 - Rationale and annotations
-- Temporal ordering of commitments
+- Authority and scope validation
+- Baseline reviews
+- Temporal ordering of legitimacy events
 
-**What it may do:**  
+**What it may do:**
 - Validate authority and scope
 - Preserve irreversible history
-- Act as a source of truth for decisions
+- Prove legitimacy mechanically
+- Import and export commits
 
-**What it may never do:**  
+**What it may never do:**
 - Observe system behavior
-- Evaluate outcomes or health
-- Interpret value or alignment
-- Suggest changes
+- Interpret alignment
+- Evaluate outcomes
+- Merge meaning
+- Escalate urgency
 
 This layer answers:  
-“What was decided, by whom, and under what authority?”
+**“What was explicitly committed, by whom, and under what authority?”**
+
+Legitimacy is local and append-only.  
+Interpretation happens elsewhere.
 
 ---
 
 ## 2. Value-Directed System (VDS) Layer
 
 **Purpose:**  
-To care for systems by observing behavior relative to declared decisions and goals.
+To provide structural care by observing behavior relative to declared decisions.
 
-**What it observes:**  
+VDS is a caregiving layer.
+
+**What it observes:**
 - System behavior
 - Telemetry and signals
-- Outcomes relative to declared values
+- Conditions relative to declared decisions
+- Stability, drift, and degradation
 
-**What it records:**  
-- Alignment and misalignment
-- Stability, drift, and trends
-- Deprecated or at-risk value contributions
+**What it records:**
+- Alignment and misalignment signals
+- Check-ins
+- Supportability degradation
+- Experiment context
+- Measurement adjustments
 
-**What it may do:**  
-- Report observations with care
-- Surface divergence and risk
-- Request decision updates
-- Request treatment plans or experiments
-- Propagate alignment signals
+**What it may do:**
+- Report observations neutrally
+- Surface divergence relative to decisions
+- Aggregate check-ins during instability
+- Suggest experiments or deployment context
+- Adjust interpretive posture during declared deployment windows
 
-**What it may never do:**  
-- Make decisions
+**What it may never do:**
+- Make or approve decisions
+- Modify identity
+- Derive version numbers
 - Enforce behavior
-- Change systems directly
-- Assume intent or correctness
+- Diagnose root cause
+- Convert visibility into obligation
+
+VDS does not declare work deprecated.  
+It reflects behavioral alignment relative to intent.
 
 This layer answers:  
-“How is the system behaving relative to what was decided?”
+**“How is the system behaving relative to what was committed?”**
+
+Care is descriptive, not prescriptive.
 
 ---
 
 ## 3. Value Lineage System (VLS) Layer
 
 **Purpose:**  
-To preserve identity, continuity, and coherence of intent over time.
+To preserve identity, structural continuity, and versioned intent over time.
 
-**What it observes:**  
-- Decisions and declared intent
-- Identity evolution
-- Deprecation, abandonment, and transition
+VLS is a lineage layer.
 
-**What it records:**  
-- Value lineage and history
-- Identity states and scope changes
-- Conflicts and coherence signals
+**What it observes:**
+- Declared identity
+- Declared purpose
+- Scope boundaries
+- Structural changes to responsibility
+- Version evolution
+- Deprecation and abandonment states
 
-**What it may do:**  
-- Represent continuity across time
-- Surface identity drift
-- Track deprecated or abandoned work
-- Enable legitimacy through memory
+**What it records:**
+- Identity versions
+- Mechanical version increments
+- Identity coexistence
+- Sunset declarations
+- Lineage continuity
+- Structural conflicts between declared intents
 
-**What it may never do:**  
+**What it may do:**
+- Derive version increments mechanically
+- Represent identity evolution
+- Track deprecated alignment states
+- Declare lifecycle transitions (e.g., Sunset)
+- Preserve cross-version continuity
+
+**What it may never do:**
 - Observe system health
-- Recommend actions
+- Interpret telemetry
+- Issue caregiving check-ins
 - Escalate urgency
 - Enforce alignment
+- Modify decisions
+
+Version numbers are mechanically derived from structural identity changes.  
+Manual version mutation is prohibited after initialization.
 
 This layer answers:  
-“Who are we, how did we get here, and what has changed in our intent?”
+**“Who are we structurally, how has that evolved, and what has changed in our declared intent?”**
+
+VLS governs identity continuity — not performance.
 
 ---
 
-## Core Boundary Rule
+## Deployment & Instability Protocol (Cross-Layer Context)
+
+Deployment windows and instability posture:
+
+- Do not form a separate authority layer
+- Do not alter legitimacy
+- Do not mutate identity
+- Do not suppress observation
+
+They modify **interpretive posture**, not structural truth.
+
+Deployment windows primarily affect VDS interpretive sensitivity.  
+Identity sunset and coexistence are governed by VLS.  
+Legitimacy remains governed by the Commit-Legitimacy layer.
+
+---
+
+## Core Boundary Rules
 
 No layer may assume the responsibilities of another.
 
-- Decision ledgers do not observe behavior  
-- VDS does not create legitimacy  
-- VLS does not intervene or advise  
+- The Commit-Legitimacy layer does not observe behavior.  
+- VDS does not create legitimacy or mutate identity.  
+- VLS does not observe runtime behavior or intervene operationally.  
+- Deployment posture does not alter legitimacy or lineage.  
+- No layer may collapse or rewrite version history.  
 
-Together, these layers preserve value, care, and agency without coercion.
+Each layer preserves a different dimension of truth:
+
+- **Legitimacy** (what was committed)  
+- **Care** (how behavior relates to commitment)  
+- **Lineage** (who the system declares itself to be over time)
+
+Together, these layers preserve value, agency, and structural clarity without coercion.
